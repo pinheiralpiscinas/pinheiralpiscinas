@@ -30,8 +30,15 @@ export default function HomePage() {
                 Piscinas de qualidade em Pinheiral, Volta Redonda e região
             </Box>
 
-            <Box sx={{ display: 'flex', justifyContent: 'center', marginTop: '10px', }}>
-                <video controls muted loop width="800" poster="capa.jpg" autoplay="autoplay">
+            <Box 
+             sx={{ 
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                width:'100%'
+                }}
+            >
+                <video controls muted loop width="100%" poster="capa.jpg" autoplay="autoplay">
                     <source src="video.mp4"></source>
                 </video>
             </Box>
@@ -55,8 +62,15 @@ export default function HomePage() {
                 Atendimento personalizado para instalação e manutenções
             </Box>
 
-            <Box sx={{ display: 'flex', justifyContent: 'center', marginTop: '10px', }}>
-                <video controls muted loop width="800" poster="capa.jpg" autoplay="autoplay">
+            <Box 
+            sx={{ 
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                width:'100%'
+                }}
+            >
+                <video controls muted loop poster="capa.jpg" autoplay="autoplay" width="100%">
                     <source src="paradiso.mp4"></source>
                 </video>
             </Box>
