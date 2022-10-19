@@ -29,7 +29,7 @@ function Footer() {
                         marginBottom:'30px'
                     }}
                 >
-                    <img src={logoHeader} width={'100%'} />
+                    <img src={logoHeader} width={'100%'} alt='imagem'/>
 
                 </Box>
 

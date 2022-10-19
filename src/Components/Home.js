@@ -2,8 +2,6 @@ import React from "react";
 import { Stack, Box } from '@mui/system';
 import homeImg from '../assets/piscinaLogo.jpg'
 import logoPiscina from '../assets/logoPinhePisc-removebg-preview.png'
-
-import BasicTabs from "./menu";
 import ScrollableTabsButtonForce from "./menu";
 
 
@@ -43,7 +41,7 @@ export default function Home() {
                 >
 
 
-                    <img src={logoPiscina} width={'200px'} />
+                    <img src={logoPiscina} width={'200px'} alt='logotipoPIscina'/>
 
                 </Box>
 

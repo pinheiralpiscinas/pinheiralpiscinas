@@ -4,7 +4,6 @@ import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import { Stack } from '@mui/system';
-import SwimmingPool from './SectionCard';
 import HomePage from '../pages/HomePage';
 import SwimmingPools from '../pages/SwimmingPools';
 import BathTub from '../pages/BathTub';

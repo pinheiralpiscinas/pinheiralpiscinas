@@ -30,8 +30,8 @@ function Header() {
          
         }}
         >
-            <img src={logoHeader} width={'60%'}/>
-            <img src={nomePiscinas} width={'100%'}/>
+            <img src={logoHeader} width={'60%'} alt='imagem'/>
+            <img src={nomePiscinas} width={'100%'} alt='imagem'/>
             
         </Box>
 
