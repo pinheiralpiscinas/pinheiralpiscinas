@@ -62,7 +62,7 @@ export default function Form() {
                              <TextField 
                                  sx={{background:'#ffffff', borderRadius:'10px'}}
                                  type="text" 
-                                 autoFocus className="form-control" 
+                                 inputProps={{ maxLength: 50 }}
                                  required placeholder="Nome" 
                                  name="name"
                                  onChange={(e) => setName(e.target.value)}
@@ -73,9 +73,11 @@ export default function Form() {
                              <TextField 
                                  sx={{background:'#ffffff', borderRadius:'10px'}}
                                  type="number" 
-                                 autoFocus className="form-control" 
                                  required placeholder="Telefone" 
                                  name="telefone"
+                                 onInput = {(e) =>{
+                                    e.target.value = Math.max(0, parseInt(e.target.value) ).toString().slice(0,12)
+                                }}
                                  onChange={(e) => setTelefone(e.target.value)}
                                  />
                          </Box>
@@ -84,6 +86,7 @@ export default function Form() {
                              <TextField 
                                  sx={{background:'#ffffff', borderRadius:'10px'}}
                                  type="email" 
+                                 inputProps={{ maxLength: 50 }}
                                  className="form-control" 
                                  required placeholder="Seu email" 
                                  name="email"
@@ -99,6 +102,7 @@ export default function Form() {
                                  rows={4}
                                  required placeholder="Sua mensagem" 
                                  name="message"
+                                 inputProps={{ maxLength: 300 }}
                                  onChange={(e) => setMessage(e.target.value)}
                              />
  
